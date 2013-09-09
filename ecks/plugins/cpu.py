@@ -31,4 +31,5 @@ def get_cpu(parent, host, community):
             parent._extract(data, int, 9)[0],
             parent._extract(data, int, 10)[0],
             parent._extract(data, int, 11)[0],
+            parent._extract(data, int, 53)[0],
         )

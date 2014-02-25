@@ -53,7 +53,7 @@ def get_disk(parent, host, community):
       details.append([ value for (oid, (data_type, index), value) in data if index == i  and data_type != 1])
 
     for dev in details:
-      if len(dev) != 5:
+      if len(dev) < 5:
         continue
       formatted.append((
         tuple(dev[0])[-1],
